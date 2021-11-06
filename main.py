@@ -14,7 +14,7 @@ def help(updater,context):
 
 def add_group(update: Update, context: CallbackContext):
     for member in update.message.new_chat_members:
-        update.message.reply_text(f'Hi New palgian {member.full_name} , Welcome to Palgo Exchange official telegram community\n\n We share  information/activities daily to help you achieve more in your crypto journey. Please click on the pinned post at the top of this chat for our most recent update\n\n 🌟 If you do not have a Palgo account yet, please click here (https://palgo.us) to join our waitlist to get $25 worth of PALET airdrop.\n\n ⚠️ Lastly, do not reply DMs with unsolicited offers, they are most likely a scam. Bybit Admins will never PM you first. \n\n Thank You For Joining Palgo💖')
+        update.message.reply_text(f'Hi New palgian {member.full_name} , Welcome to Palgo Exchange official telegram community\n\n We share  information/activities daily to help you achieve more in your crypto journey. Please click on the pinned post at the top of this chat for our most recent update\n\n 🌟 If you do not have a Palgo account yet, please visit https://palgo.us to join our waitlist to get $25 worth of PALET airdrop.\n\n ⚠️ Lastly, do not reply DMs with unsolicited offers, they are most likely a scam. Palgo Admins will never PM you first. \n\n Thank You For Joining Palgo💖')
 
 add_group_handle = MessageHandler(Filters.status_update.new_chat_members, add_group)
 updater.dispatcher.add_handler(add_group_handle)
